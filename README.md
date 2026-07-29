@@ -5,4 +5,5 @@ Required Azure Prerequisites
 To run this pipeline successfully, create an App Registration in Microsoft Entra ID with the following Application permissions for Microsoft Graph, and grant Admin Consent:
 
 DeviceManagementConfiguration.ReadWrite.All
+
 DeviceManagementServiceConfig.ReadWrite.All
