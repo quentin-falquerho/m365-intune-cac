@@ -1,0 +1,11 @@
+m365-intune-cac/
+├── .github/
+│   └── workflows/
+│       └── deploy-intune.yml
+├── configs/
+│   ├── compliance/
+│       └── windows-11-compliance.json
+│   └── configurations/
+│       └── windows-firewall-profile.json
+└── scripts/
+    └── Sync-IntuneConfigs.ps1

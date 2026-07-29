@@ -1,0 +1,8 @@
+{
+  "displayName": "Windows Defender Firewall Baseline",
+  "description": "Enforces strict firewall settings across all network profiles.",
+  "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
+  "firewallDomainProfileEnable": true,
+  "firewallPublicProfileEnable": true,
+  "firewallStandardProfileEnable": true
+}

@@ -1,0 +1,9 @@
+{
+  "displayName": "Windows 11 Security Baseline Compliance",
+  "description": "Enforces secure operating system settings and BitLocker for Windows 11.",
+  "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
+  "bitLockerEnableWarningForOtherPartitions": true,
+  "passwordRequired": true,
+  "passwordMinimumLength": 8,
+  "osMinimumVersion": "10.0.22000"
+}

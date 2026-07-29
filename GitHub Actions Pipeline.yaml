@@ -1,0 +1,21 @@
+name: Deploy Intune Configurations
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Intune Configuration Sync
+        shell: pwsh
+        run: |
+          ./scripts/Sync-IntuneConfigs.ps1 `
+            -TenantId "${{ secrets.AZURE_TENANT_ID }}" `
+            -ClientId "${{ secrets.AZURE_CLIENT_ID }}" `
+            -ClientSecret "${{ secrets.AZURE_CLIENT_SECRET }}"
